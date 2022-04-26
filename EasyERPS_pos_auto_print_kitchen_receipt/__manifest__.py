@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "EasyERPS POS auto print kitchen receipt",
+    'name': "POS auto print kitchen receipt",
     'support': "support@easyerps.com",
     'license': "LGPL-3",
     'summary': """
