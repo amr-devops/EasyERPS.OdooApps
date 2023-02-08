@@ -7,13 +7,19 @@ odoo.define('EasyERPS_pos_auto_print_kitchen_receipt.ReceiptScreen', function (r
     const customReceiptScreen = ReceiptScreen =>
         class extends ReceiptScreen {
 
-        mounted() {
+        constructor() {
+                super(...arguments);
                 var self = this;
-                setTimeout(async () => {
-                    await self.handleAutoPrintChanges();
-                }, 0);
-                 super.mounted();
+                self.handleAutoPrintChanges();
             }
+
+        // mounted() {
+        //         var self = this;
+        //         setTimeout(async () => {
+        //             await self.handleAutoPrintChanges();
+        //         }, 0);
+        //          super.mounted();
+        //     }
 
             async handleAutoPrintChanges() {
                 // var self = this;
