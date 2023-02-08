@@ -12,8 +12,11 @@
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Point of Sale',
-    'version': '15.0.1',
+    'version': '15.0.2',
     # any module necessary for this one to work correctly
+    'data': [
+            'views/views.xml',
+        ],
     'depends': ['base', 'point_of_sale', 'pos_restaurant'],
     'assets': {
         'point_of_sale.assets': [
@@ -21,5 +24,6 @@
             'EasyERPS_pos_auto_print_kitchen_receipt/static/src/js/Models.js',
         ],
     },
+    'images': ['images/main_screenshot.png'],
 
 }
