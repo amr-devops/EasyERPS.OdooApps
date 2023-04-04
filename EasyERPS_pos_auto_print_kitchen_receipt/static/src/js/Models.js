@@ -26,6 +26,18 @@ models.Order = models.Order.extend({
         return isPrintSuccessful;
     },
 
+    is_printChanges: function(){
+        var printers = this.pos.printers;
+        var order = this.pos.get_order();
+        for(var i = 0; i < printers.length; i++){
+            var changes = this.computeChanges(printers[i].config.product_categories_ids);
+            if ( changes['new'].length > 0 || changes['cancelled'].length > 0){
+                return true
+            }
+        }
+        return false
+    },
+
 
 });
 

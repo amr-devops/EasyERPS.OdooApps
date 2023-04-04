@@ -12,7 +12,7 @@
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Point of Sale',
-    'version': '15.0.2',
+    'version': '15.1.1',
     # any module necessary for this one to work correctly
     'data': [
             'views/views.xml',
@@ -23,6 +23,9 @@
             'EasyERPS_pos_auto_print_kitchen_receipt/static/src/js/ReceiptScreen.js',
             'EasyERPS_pos_auto_print_kitchen_receipt/static/src/js/Models.js',
         ],
+        'web.assets_qweb': [
+            'EasyERPS_pos_auto_print_kitchen_receipt/static/src/xml/**/*.xml',
+        ]
     },
     'images': ['images/main_screenshot.png'],
 

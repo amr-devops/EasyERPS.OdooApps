@@ -12,6 +12,13 @@
                     </div>
                 </div>
             </xpath>
+            <xpath expr="//div[@id='is_order_printer']//div[hasclass('o_setting_right_pane')]" position="after">
+                <div class="content-group mt16" attrs="{'invisible': [('is_order_printer', '=', False)]}">
+                    <div>
+                        <field name="kitchen_print" class="oe_inline"/><span class="oe_inline"><b>Show Print kitchen receipt Button on Receipt Screen</b></span>
+                    </div>
+                </div>
+            </xpath>
         </field>
     </record>
   </data>
